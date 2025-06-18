@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solicitar Evento | Extensión DUOC UC</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>Extensión DUOC UC</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="formulario.html">Solicitar Evento</a></li>
+        <li><a href="eventos.html">Mis Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <section class="reserva-evento">
+      <h2>Reserva tu evento</h2>
+
+      <p>Selecciona una fecha (las fechas en rojo están ocupadas):</p>
+      <div id="calendar" class="calendar"></div>
+
+      <div class="form-section">
+        <label for="horario">Selecciona horario:</label>
+        <select id="horario" disabled>
+          <option value="">Primero selecciona una fecha</option>
+        </select>
+      </div>
+
+      <div class="form-section">
+        <label for="lugar">Selecciona lugar:</label>
+        <select id="lugar" disabled>
+          <option value="">Primero selecciona una fecha y horario</option>
+        </select>
+      </div>
+
+      <div id="materiales" class="form-section"></div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto-coordinador">
+      <h2>Contacta al Coordinador</h2>
+      <p>¿Tienes dudas o necesitas ayuda? Envía un mensaje al coordinador del área.</p>
+
+      <form id="form-contacto">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+      </form>
+
+      <p id="respuesta" class="mensaje-exito" style="display: none;">
+        ✅ Mensaje enviado, te contactarán en breve.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h3>Extensión DUOC</h3>
+        <p>Fomentando la vida estudiantil con actividades, charlas y eventos culturales en nuestra comunidad DUOC UC.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="formulario.html">Solicitar Evento</a></li>
+          <li><a href="eventos.html">Mis Eventos</a></li>
+          <li><a href="#">Chat en línea</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: extension@duoc.cl</p>
+        <p>Teléfono: +56 2 2345 6789</p>
+        <p>Dirección: Av. La Plaza 123, San Carlos de Apoquindo</p>
+      </div>
+
+      <div class="footer-section redes">
+        <h4>Síguenos</h4>
+        <a href="#"><img src="images/facebook-icon.svg.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/instagram-icon.svg.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/twitter-icon.svg.png" alt="Twitter" /></a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Extensión DUOC UC. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
