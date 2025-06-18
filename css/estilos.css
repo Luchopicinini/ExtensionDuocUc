@@ -786,3 +786,92 @@ button:hover,
   padding-top: 12px;
   margin-top: 30px;
 }
+
+
+/* Contenedor del login */
+.login-container {
+  max-width: 400px;
+  background: #e9f0fb;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  color: #004080;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #004080;
+}
+
+.formulario input[type="text"],
+.formulario input[type="password"] {
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 2px solid #004080;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="password"]:focus {
+  outline: none;
+  border-color: #0073e6;
+  background: #f0f7ff;
+}
+
+/* Botones */
+.btn-enviar {
+  display: inline-block;
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.btn-enviar:hover {
+  background-color: #0066cc;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: #004080;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+}
+
+.forgot-password:hover {
+  color: #0066cc;
+}
+
+/* Imagen al lado del login */
+.login-image img {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
